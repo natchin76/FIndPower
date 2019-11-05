@@ -1,11 +1,13 @@
-# -*- coding: utf-8 -*-
 """
 Created on Tue Nov  5 22:58:20 2019
-Find the index at which a given power of 2 appears in a list(found flag removed)
+Find the index at which a given power of 2 appears in a list
+Used for loop to create List L
 @author: CHINTAN
 """
-L = [1, 2, 4, 8, 16, 32, 64]
-X = 3
+L=[]
+for i in range(6):
+    L.append(2**i)
+X = 5
 found = False   
 i = 0
 while i < len(L):
