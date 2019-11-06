@@ -6,7 +6,6 @@ Find the index at which a given power of 2 appears in a list(found flag removed)
 """
 L = [1, 2, 4, 8, 16, 32, 64]
 X = 3
-found = False   
 i = 0
 while i < len(L):
     if 2 ** X == L[i]:
