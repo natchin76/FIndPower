@@ -5,8 +5,7 @@ USe of while else statement
 """
 
 L=[2**i for i in range(6)]
-X = 3
-found = False   
+X = 3 
 i = 0
 while i < len(L) and 2**X!=L[i]:
     print(X,'not found')
