@@ -6,7 +6,6 @@ Used for loop to create List L
 """
 L=[2**i for i in range(6)]
 X = 5
-found = False   
 i = 0
 while i < len(L):
     if 2 ** X == L[i]:
