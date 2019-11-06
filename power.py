@@ -4,9 +4,7 @@ Find the index at which a given power of 2 appears in a list
 Used for loop to create List L
 @author: CHINTAN
 """
-L=[]
-for i in range(6):
-    L.append(2**i)
+L=[2**i for i in range(6)]
 X = 5
 found = False   
 i = 0
