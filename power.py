@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
-Created on Tue Nov  5 22:58:20 2019
-Find the index at which a given power of 2 appears in a list
+Created on Wed Nov  6 16:51:24 2019
+for loop removed:L created using list comprehension
 @author: CHINTAN
 """
-L = [1, 2, 4, 8, 16, 32, 64]
-X = 5
-found = False   
-i = 0
-while not found and i < len(L):
-    if 2 ** X == L[i]:
-        found = True
-    else:
-        i = i+1
-    if found:
-        print('at index', i)
-    else:
-        print(X, 'not found')
+
+L=[2**i for i in range(6)]
+X = 10
+i=0
+while i < len(L) and L[i]!=2**X:
+    print(X,'not found')
+    i=i+1
+else:
+    print('at index',i)    
+    
